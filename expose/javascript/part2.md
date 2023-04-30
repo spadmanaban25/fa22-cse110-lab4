@@ -45,3 +45,12 @@ this only refers to the reference of the array, not the contents. This means tha
 was explicitly assigned to another array, then it points to another array and changes its reference,
 which then would cause an error. However, adding elements to it does not change the actual reference
 of the array, discounted.
+
+12. 
+    A. student.name or student['name'] <br>
+    B. student['Grad Year'] <br>
+    C. student.greeting() <br>
+    D. student['Favorite Teacher'].name or student['Favorite Teacher']['name']<br>
+    E. student.courseLoad[0] or student['courseLoad'][0]
+
+13. 
