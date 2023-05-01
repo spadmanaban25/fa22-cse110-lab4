@@ -76,3 +76,14 @@ of the array, discounted.
 However, "===" is known as the strict equality operator which means that if different data types are compared using this operator, then 
 the output will always be false without any conversion. It may be true if the data types are the same and have the same values, otherwise false
 if values are different even if same data type. 
+
+16. **In Corresponding JS File**
+
+17. The modifyArray function will return the array: [2, 4, 6]. The function creates a new array and traverses through
+the array parameter. In each iteration the callback function, doSomething, is called and returns the number argument times 2. 
+This value is then pushed into the array. After the loop ends, the new array is returned at the end. <br>
+
+18. **In Corresponding JS File**
+
+19. This function prints out 1 and 4 immediately. Then it will go to the setTimeout functions where it will print 3 immediately since
+the timer was 0 milliseconds, and then the function waits for 1000 milliseconds or 1 second to print out 2. 
