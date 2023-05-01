@@ -47,10 +47,32 @@ which then would cause an error. However, adding elements to it does not change 
 of the array, discounted.
 
 12. 
-    A. student.name or student['name'] <br>
-    B. student['Grad Year'] <br>
-    C. student.greeting() <br>
-    D. student['Favorite Teacher'].name or student['Favorite Teacher']['name']<br>
-    E. student.courseLoad[0] or student['courseLoad'][0]
+    **A.** student.name or student['name'] <br>
+    **B.** student['Grad Year'] <br>
+    **C.** student.greeting() <br>
+    **D.** student['Favorite Teacher'].name or student['Favorite Teacher']['name']<br>
+    **E.** student.courseLoad[0] or student['courseLoad'][0]
 
 13. 
+    **A.** '32'; Javascript changes 2 to be a string so that the concatenation can be made, resulting in '32.' <br>
+    **B.** 1; '3' is converted to a number 3, which then is subtracted by 2 to get 1.<br>
+    **C.** 3; null is converted to 0, so 3 can be added to 0 to get 3.<br>
+    **D.**'3null'; null was converted to a string 'null' allowing for concatenation to result in '3null' <br>
+    **E.** 4; true was converted to its number counterpart, 1, which was added to 3 yielding 4.<br>
+    **F.** 0; both false and null were converted to the number 0 so adding both 0's led to 0.<br>
+    **G.** '3undefined'; undefined was converted to the string 'undefined' resulting in a string concatenation of '3undefined.'<br>
+    **H.** NaN; undefined was converted trying to be converted to a number in order to carry out the subtraction operation. However,
+    the numerical equivalence of undefined is NaN, which makes the overall output to be NaN. <br>
+
+14. 
+    **A.** true; '2' becomes the number 2 which is greater than 1, thus the result is true. <br>
+    **B.** false; both '2' and '12' are converted to the numbers 2 and 12, and 2 is not less than 12, which leads to false. <br>
+    **C.** true; '2' is converted to number 2 which is equal to 2, leading to the result to be true. <br>
+    **D.** false; both 2 and '2' are different data types, so the answer is false. <br>
+    **E.** false; true is converted to number 1 which is not equal to 2, so the result is false. <br>
+    **F.** true; both true and Boolean(2) are of the same data type and the values are the same, so the overall result is true. <br>
+
+15. The "==" opeartor aims to convert data types by default, if different data types are compared and checks if the values are equal or not. 
+However, "===" is known as the strict equality operator which means that if different data types are compared using this operator, then 
+the output will always be false without any conversion. It may be true if the data types are the same and have the same values, otherwise false
+if values are different even if same data type. 
