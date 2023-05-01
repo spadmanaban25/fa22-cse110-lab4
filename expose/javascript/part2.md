@@ -1,3 +1,4 @@
+# Part 2
 1. At line 12, the value of the global variable i will be printed out, which is 3. This variable
 is a counter variable and increments until it reaches end of array. This was able to 
 be printed because i was declared with a var keyword, meaning it has no block scope
